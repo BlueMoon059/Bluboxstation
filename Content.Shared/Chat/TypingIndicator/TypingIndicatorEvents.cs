@@ -12,9 +12,10 @@ namespace Content.Shared.Chat.TypingIndicator;
 [Serializable, NetSerializable]
 public sealed class TypingChangedEvent : EntityEventArgs
 {
+    public readonly ProtoId<TypingIndicatorPrototype>? OverrideIndicator; // DeltaV
     public readonly TypingIndicatorState State;
 
-    public TypingChangedEvent(TypingIndicatorState state)
+    public TypingChangedEvent(TypingIndicatorState state, ProtoId<TypingIndicatorPrototype>? proto = null) // DeltaV
     {
         State = state;
     }

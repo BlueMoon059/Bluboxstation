@@ -36,7 +36,7 @@ public sealed class ThavenMoodsEui : BaseEui
     {
         if (!IsAllowed())
             return;
-
+var moods = _thavenMoodsSystem.GetActiveMoods(player, comp, false);
         _target = ent;
         _moods = ent.Comp.Moods;
         _sharedMoods = _moodsSystem.SharedMoods.ToList();

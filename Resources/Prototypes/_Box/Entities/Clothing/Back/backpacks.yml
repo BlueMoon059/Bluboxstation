@@ -1,0 +1,9 @@
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackRobo
+  name: roboticist backpack
+  suffix: Box
+  description: A backpack specially designed to hold wiring bundles and prevent oil spills.
+  components:
+  - type: Sprite
+    sprite: _Box/Clothing/Back/Backpacks/roboticist.rsi

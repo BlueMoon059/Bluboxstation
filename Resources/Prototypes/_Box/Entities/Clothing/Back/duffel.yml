@@ -1,0 +1,9 @@
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackDuffelRobo
+  name: roboticist duffel bag
+  suffix:
+  description: A large duffel bag for holding extra robotic related goods.
+  components:
+  - type: Sprite
+    sprite: _Box/Clothing/Back/Duffels/roboticist.rsi
